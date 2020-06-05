@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator", "RecipeGenerator\RecipeGenerator.csproj", "{265C942A-B274-442C-B2CA-D3176C30806F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator_BL", "RecipeGenerator_BL\RecipeGenerator_BL.csproj", "{FA0E8672-429A-4DAE-9989-29E104D90878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator_DA", "RecipeGenerator_DA\RecipeGenerator_DA.csproj", "{818A994C-3E88-4ACB-AA36-372C4250966C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator_Models", "RecipeGenerator_Models\RecipeGenerator_Models.csproj", "{CAE1723A-5BCA-4725-9F08-2CD019543984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{265C942A-B274-442C-B2CA-D3176C30806F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265C942A-B274-442C-B2CA-D3176C30806F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265C942A-B274-442C-B2CA-D3176C30806F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265C942A-B274-442C-B2CA-D3176C30806F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA0E8672-429A-4DAE-9989-29E104D90878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA0E8672-429A-4DAE-9989-29E104D90878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA0E8672-429A-4DAE-9989-29E104D90878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA0E8672-429A-4DAE-9989-29E104D90878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818A994C-3E88-4ACB-AA36-372C4250966C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818A994C-3E88-4ACB-AA36-372C4250966C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818A994C-3E88-4ACB-AA36-372C4250966C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818A994C-3E88-4ACB-AA36-372C4250966C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE1723A-5BCA-4725-9F08-2CD019543984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE1723A-5BCA-4725-9F08-2CD019543984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE1723A-5BCA-4725-9F08-2CD019543984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE1723A-5BCA-4725-9F08-2CD019543984}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
