@@ -7,4 +7,8 @@
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.20" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeGenerator_Models\RecipeGenerator_Models.csproj" />
+    <ProjectReference Include="..\RecipeGenerator_DA\RecipeGenerator_DA.csproj" />
+  </ItemGroup>
 </Project>

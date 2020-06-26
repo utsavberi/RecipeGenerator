@@ -10,4 +10,12 @@
     <PackageReference Include="jQuery.UI.Combined" Version="1.12.1" />
     <PackageReference Include="MySql.Data" Version="8.0.20" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeGenerator_BL\RecipeGenerator_BL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\RecipeGenerator_Models\RecipeGenerator_Models.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
