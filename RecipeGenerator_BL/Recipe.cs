@@ -30,5 +30,10 @@ namespace RecipeGenerator_BL
             }
             return recipeInformation;
         }
+
+        public static int save(RecipeInformation recipeInformation)
+        {
+            return RecipeGenerator_DA.Recipe_DA.save(recipeInformation.Title, recipeInformation.Ingredients, recipeInformation.Method, recipeInformation.ImageUrl);
+        }
     }
 }

@@ -18,4 +18,28 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\Template.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Views\Home\AddRecipe.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>AddRecipe.cs</LastGenOutput>
+    </Content>
+    <Content Update="Views\Home\AddRecipe2.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>AddRecipe2.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Home\AddRecipe2.cs">
+      <DependentUpon>AddRecipe2.cshtml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Home\AddRecipe.cs">
+      <DependentUpon>AddRecipe.cshtml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Home\AddRecipe.tt" />
+  </ItemGroup>
 </Project>

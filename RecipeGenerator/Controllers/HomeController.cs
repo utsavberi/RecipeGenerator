@@ -34,25 +34,20 @@ namespace RecipeGenerator.Controllers
 
         public IActionResult RandomRecipe()
         {
-            //MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=recipe_generator;port=3306;password=password");
-            //try
-            //{
-            //    string sql = "Select id, title, ingredients, method, imageUrl from recipe where id = 1";
-            //    MySqlDataAdapter daRecipe = new MySqlDataAdapter(sql, con);
-            //    MySqlCommandBuilder cb = new MySqlCommandBuilder(daRecipe);
-
-            //    DataSet dsRecipe = new DataSet();
-            //    daRecipe.Fill(dsRecipe, "Recipe");
-            //    List<string> res = dsRecipe.Tables[0].AsEnumerable().Select(m => "abc"+m["title"]).ToList();
-            //    ViewBag.recipeTitle = res[0];
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine("Error while fetching data from db: " + ex);
-            //}
-
             RecipeInformation recipeInformation = RecipeGenerator_BL.Recipe.getFirstRecipe();
             ViewBag.recipe = recipeInformation;
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult AddRecipe() {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddRecipe(RecipeInformation recipeInformation)
+        {
+            RecipeGenerator_BL.Recipe.save(recipeInformation);
             return View();
         }
 

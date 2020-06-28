@@ -64,5 +64,4 @@ insert into recipe (title, ingredients, method, imageUrl) values
 </ol>',
 'http://www.reciperoulette.tv/public/upload/f50ca8fd18c99cc30f3eb9cbdfb83a52.jpg'
 );
-
-select  * from recipe limit 1;
+select  * from recipe order by id desc limit 1 ;
